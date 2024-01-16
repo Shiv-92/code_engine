@@ -4,7 +4,7 @@
 
 IBM Cloud Code Engine is a fully managed, serverless platform-as-a-service that runs your containerized workloads, including web apps, micro-services, event-driven functions, or batch jobs. Code Engine even builds container images for you from your source code. All these workloads can seamlessly work together because they are all hosted within the same Kubernetes infrastructure. The Code Engine experience is designed so that you can focus on writing code and not on the infrastructure that is needed to host it. For more information about Code Engine, see <a href="https://cloud.ibm.com/docs/codeengine?topic=codeengine-getting-started"> Getting Started with Code Engine</a>
 
-<b>Please Note:</b> (light-bulb) You dont need to be familiar with creating images or containers all you need to serve it is your source code.
+<b>Please Note:</b> You dont need to be familiar with creating images or containers all you need to serve it is your source code.
 
 ### What can Code Engine do?
 
@@ -67,7 +67,7 @@ Logging into IBM Cloud
 Logging into Podman
 
     podman login uk.icr.io (login to a registry// VM )
-    podman login -u iamapikey -p PuoFkeS9vOlmzihk7sXmG2WQLvay1X-XgDeMIHZ26cjA uk.icr.io
+    podman login -u iamapikey -p <APIKEY> uk.icr.io
 
     podman tag uk.icr.io/localhost/mod-backend-test/backend:1.2
     podman push uk.icr.io/mod-des-backend/backend:1.2 - local name first then the tag(renaming/retagging the image including he rep and namespace)
